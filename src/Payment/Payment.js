@@ -9,7 +9,39 @@ function Payment() {
     const [focus, setFocus] = useState('')
     return (
         <div>
-            
+            <form>
+                <input 
+                type="text" 
+                name = "name" 
+                value = { name } 
+                onChange = { e => setName(e.target.value) }
+                onFocus = { e => setFocus(e.target.name) }
+                />
+
+                <input 
+                type="tel" 
+                name = "number" 
+                value = { number } 
+                onChange = { e => setNumber(e.target.value) }
+                onFocus = { e => setFocus(e.target.name)}
+                />
+
+                <input 
+                type="tel" 
+                name = "expiry" 
+                value = { expiry } 
+                onChange = { e => setExpiry(e.target.value) }
+                onFocus = { e => setFocus(e.target.name)}
+                />
+
+                <input 
+                type="tel" 
+                name = "text" 
+                value = { cvc } 
+                onChange = { e => setCvc(e.target.value) }
+                onFocus = { e => setFocus(e.target.name)}
+                />
+            </form>
         </div>
     )
 }
