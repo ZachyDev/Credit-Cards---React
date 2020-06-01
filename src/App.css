@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+input[type="text"],
+input[type="tel"] {
+  height: 40px;
+  width: 240px;
+  border-radius: 20px;
+  margin-top: 20px;
+  outline: none
+
+}
